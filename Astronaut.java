@@ -41,9 +41,9 @@ public class Astronaut {
         else if (mars instanceof chocolate.Mars) {
             // cast mars to chocolate.Mars
             chocolate.Mars chocolateMars = (chocolate.Mars) mars;
-            this.snacks++;
             System.out.println(this.name + ": Thanks for this Mars number " + chocolateMars.getId());
             System.out.println(this.name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
+            this.snacks++;
 
         }
     }
