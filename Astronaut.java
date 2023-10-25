@@ -51,6 +51,7 @@ public class Astronaut {
     public void doActions() {
         System.out.println(this.name + ": Nothing to do.");
         System.out.println(this.name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
+        this.snacks++;
     }
 
 }
