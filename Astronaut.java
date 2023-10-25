@@ -40,12 +40,12 @@ public class Astronaut {
         }
         else if (mars instanceof chocolate.Mars) {
             // cast mars to chocolate.Mars
+            this.snacks++;
             chocolate.Mars chocolateMars = (chocolate.Mars) mars;
-            System.out.println(this.name + ": Thanks for this Mars number " + chocolateMars.getId());
+            System.out.println(this.name + ": Thanks for this mars number " + chocolateMars.getId());
             if (this.destination == null) {
                 System.out.println(this.name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
             }
-            this.snacks++;
 
         } else if (mars instanceof planet.moon.Phobos) {
             // cast mars to planet.moon.Phobos
