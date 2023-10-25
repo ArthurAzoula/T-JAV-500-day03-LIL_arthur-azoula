@@ -14,28 +14,6 @@ public class Phobos {
         }
     }
 
-    public Phobos(planet.Mars mars) {
-        if (mars == null) {
-            System.out.println("No planet given.");
-        } else {
-            this.mars = mars;
-            this.landingSite = null;
-            System.out.println("Phobos placed in orbit.");
-        }
-    }
-
-    public Phobos(String landingSite) {
-        this.landingSite = landingSite;
-        this.mars = null;
-        System.out.println("No planet given.");
-    }
-
-    public Phobos() {
-        this.landingSite = null;
-        this.mars = null;
-        System.out.println("No planet given.");
-    }
-
     public String getLandingSite() {
         return this.landingSite;
     }
