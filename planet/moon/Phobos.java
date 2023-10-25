@@ -6,6 +6,8 @@ public class Phobos {
 
     public Phobos(planet.Mars mars, String landingSite) {
         if (mars == null) {
+            this.mars = null;
+            this.landingSite = null;
             System.out.println("No planet given.");
         } else {
             this.mars = mars;
