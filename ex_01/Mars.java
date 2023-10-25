@@ -5,7 +5,7 @@ public class Mars {
 
     public Mars() {
         this.id = nextId;
-        this.nextId++;
+        nextId++;
     }
 
     public int getId() {
