@@ -42,7 +42,9 @@ public class Astronaut {
             // cast mars to chocolate.Mars
             chocolate.Mars chocolateMars = (chocolate.Mars) mars;
             System.out.println(this.name + ": Thanks for this Mars number " + chocolateMars.getId());
-            System.out.println(this.name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
+            if (this.destination == null) {
+                System.out.println(this.name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
+            }
             this.snacks++;
 
         } else if (mars instanceof planet.moon.Phobos) {
