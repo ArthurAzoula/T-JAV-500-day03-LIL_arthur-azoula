@@ -45,6 +45,31 @@ public class Team {
 
     }
 
+    public void doActions(Object mars) {
+        if (mars instanceof planet.Mars) {
+            // cast mars to planet.Mars
+            planet.Mars planetMars = (planet.Mars) mars;
+            for (Astronaut astronaut : this.astronauts) {
+                astronaut.doActions(planetMars);
+            }
+        } else if (mars instanceof chocolate.Mars) {
+            // cast mars to chocolate.Mars
+            chocolate.Mars chocolateMars = (chocolate.Mars) mars;
+            for (Astronaut astronaut : this.astronauts) {
+                astronaut.doActions(chocolateMars);
+            }
+        } else if (mars instanceof planet.moon.Phobos) {
+            // cast mars to planet.moon.Phobos
+            planet.moon.Phobos phobos = (planet.moon.Phobos) mars;
+            for (Astronaut astronaut : this.astronauts) {
+                astronaut.doActions(phobos);
+            }
+        }
 
+        }
+
+    public void doActions() {
+        System.out.println(this.name + ": Nothing to do.");
+    }
 
 }

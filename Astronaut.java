@@ -45,6 +45,11 @@ public class Astronaut {
             System.out.println(this.name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
             this.snacks++;
 
+        } else if (mars instanceof planet.moon.Phobos) {
+            // cast mars to planet.moon.Phobos
+            planet.moon.Phobos phobos = (planet.moon.Phobos) mars;
+            this.destination = phobos.getLandingSite();
+            System.out.println(this.name + ": Started a mission!");
         }
     }
 
