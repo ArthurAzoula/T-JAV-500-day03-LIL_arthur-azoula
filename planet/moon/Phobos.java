@@ -10,7 +10,7 @@ public class Phobos {
         } else {
             this.mars = mars;
             this.landingSite = landingSite;
-            System.out.println("Phobos place in orbit.");
+            System.out.println("Phobos placed in orbit.");
         }
     }
 
@@ -20,17 +20,19 @@ public class Phobos {
         } else {
             this.mars = mars;
             this.landingSite = null;
-            System.out.println("Phobos place in orbit.");
+            System.out.println("Phobos placed in orbit.");
         }
     }
 
     public Phobos(String landingSite) {
         this.landingSite = landingSite;
+        this.mars = null;
         System.out.println("No planet given.");
     }
 
     public Phobos() {
         this.landingSite = null;
+        this.mars = null;
         System.out.println("No planet given.");
     }
 
